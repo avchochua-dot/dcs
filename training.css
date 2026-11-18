@@ -1,0 +1,52 @@
+
+/* Preserve DCS geometry; improve legibility of device faceplates. */
+#modal .eq-feedback{background:#151515;color:#fff;border:1px solid #777;padding:12px}
+#modal .eq-feedback strong,#modal .eq-feedback p{color:#fff}
+#modal .hmi-panel{color:#e8e8e8}
+#modal .hmi-panel h4{color:#fff}
+#modal .eq-blocked{color:#ffb57a}#modal .eq-permit{color:#5dff79}
+.station-keybar{display:inline-flex;align-items:center;gap:4px;margin-left:5px}.station-keybar small{font-size:10px;color:#e4d13b;max-width:180px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.station-keybar .hmi-button{font-size:10px;min-height:25px;padding:3px 6px}
+.sync-config{display:flex;gap:10px;align-items:end;flex-wrap:wrap}.sync-config label{display:grid;gap:4px}.sync-config select{padding:5px;background:#fff;color:#111}
+.sync-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:16px 0}.sync-metrics span{padding:10px 5px;background:#222;color:#eee;text-align:center}.sync-metrics b{display:block;color:#ffef7a;font:18px Consolas,monospace;margin-top:5px}
+.sync-state{background:#333;color:#fff;padding:10px;line-height:1.6;border-left:5px solid #e6b540}.sync-state.permit{border-color:#24ce63}.sync-reason{margin:7px 0;font-size:12px;color:#7a3105}
+.tap-readout{background:#222;color:#fff;padding:16px;font-size:18px}.tap-readout b{color:#ffef7a}.tap-blockers p{font-size:12px;color:#72320c}
+.workflow-list{padding-left:24px}.workflow-list li{margin-bottom:18px;padding-left:4px}.workflow-list p{font-size:12px;line-height:1.6;margin:5px 0}.workflow-list .hmi-button{margin:3px 5px 3px 0;font-size:11px}
+button:focus-visible,[role=button]:focus-visible{outline:2px solid #00dfff;outline-offset:2px}
+@media(max-width:1450px){.station-keybar small{display:none}.tool-bar{gap:2px}.station-keybar{margin-left:2px}.station-keybar .hmi-button{padding:2px 4px}}
+
+.rejection-page{padding:14px 24px;color:#eee}.rejection-state{padding:12px 15px;border-left:5px solid #43c882;background:#171f24;display:grid;gap:5px;font-size:16px}.rejection-state.active{border-color:#ffd13f}.rejection-state span{font-size:12px;color:#ccc}.rejection-metrics{display:grid;grid-template-columns:repeat(6,1fr);gap:9px;margin:15px 0}.rejection-metrics>div{border:1px solid #727272;background:#141414;padding:12px}.rejection-metrics span{font-size:12px;color:#bbb}.rejection-metrics b{display:block;margin-top:7px;font:24px Consolas,monospace;color:#7ce5f4}.rejection-metrics small{font-size:12px;color:#ddd}.rejection-chart svg{width:100%;max-height:320px;display:block}.rejection-legend{display:flex;gap:22px;justify-content:center;font-size:12px;margin:8px}.rejection-status{font-size:13px;padding:12px;border:1px solid #555}.rejection-assumptions{font-size:12px;line-height:1.6;color:#bbb;margin-top:15px}.rejection-summary{padding:10px;margin:16px 0}.rejection-empty{padding:55px;text-align:center;color:#aaa}@media(max-width:1100px){.rejection-metrics>div{padding:8px}.rejection-metrics b{font-size:18px}.rejection-legend{gap:10px;font-size:10px}}
+
+/* HOME: darker grey HMI keys and a charcoal canvas with readable white labels. */
+#hmi-canvas>.home-page.home0410{background:#101213}
+.home0410-label,.home0410-buttons,.home0410-diag-panel{background:#0c0e0f;border-color:#7b7d7e;color:#eee}
+.home0410-buttons>.hmi-button{background:linear-gradient(#747778,#555859);color:#fff;text-shadow:none;border-color:#929596 #444748 #444748 #929596;font-weight:500}
+.home0410-buttons>.hmi-button:hover,.home0410-buttons>.hmi-button:focus-visible{background:linear-gradient(#878b8d,#686d70);color:#fff;outline:1px solid #becbd0}
+.home0410-buttons>.hmi-button:active{background:#4e5254;border-style:inset}
+.home0410-switch-values>div{grid-template-rows:repeat(3,minmax(0,1fr));padding:7px 12px;row-gap:3px}
+.home0410-switch-values .hmi-value{font-size:16px;height:22px}
+.home0410-switch-values small{font-size:10px;min-width:42px}
+.home-source-link{background:none;border:0;color:#d0d8db;padding:0;font:bold 10px Arial;cursor:pointer}
+.home-source-link:hover{text-decoration:underline;color:#fff}
+
+/* 04.15: audio controls live outside the process drawings. */
+.tool-bar [data-action="audio-settings"]{font:11px Arial,sans-serif;min-width:90px;white-space:nowrap;padding:2px 6px}
+.sound-controls{display:flex;align-items:center;gap:14px;margin-bottom:14px}.sound-controls strong{font-size:11px;color:#244450}
+.sound-slider{display:grid;grid-template-columns:190px minmax(100px,1fr) 45px;align-items:center;gap:12px;padding:7px 0}.sound-slider input{width:100%;accent-color:#226682}.sound-slider output{text-align:right;font-weight:bold}
+.sound-unit-sliders{border-top:1px solid #999;margin-top:5px}.sound-live{background:#1c272d;color:#d8eced;padding:10px;margin:12px 0;font-size:12px}.sound-live>div{display:grid;grid-template-columns:30px 1fr 1fr;gap:10px;padding:4px 0}.sound-live p{margin:8px 0 0;color:#ffdf7a}
+.sound-meter-label{display:flex;align-items:center;gap:10px;font-size:12px}.sound-meter-label meter{flex:1;height:14px}.sound-meter-label span{min-width:70px;text-align:right}
+.setup-audio-choice{display:flex;gap:8px;align-items:center;margin-top:15px;color:#163b50;font-size:12px}.setup-audio-choice input{accent-color:#1d6982}
+@media(max-width:700px){.sound-slider{grid-template-columns:130px 1fr 40px}.sound-live>div{grid-template-columns:25px 1fr}.sound-live>div>span:last-child{grid-column:2}}
+
+/* 04.17: labels use separate name/state lanes; the halo maintains contrast on dense drawings. */
+.dx-svg text.circuit-label,.dx-svg text.dx-position{paint-order:stroke fill;stroke:#000;stroke-width:2.5px;stroke-linejoin:round;stroke-linecap:round;pointer-events:visiblePainted}
+.dx-svg text.dx-position{font-family:Arial,sans-serif;font-size:9px;letter-spacing:.15px}
+
+/* Live P-Q capability chart, P vertical and Q horizontal. */
+#modal.capability-modal{width:min(900px,94vw);max-width:94vw;max-height:94vh}
+.capability-modal .modal-body{padding:16px 20px 8px;background:#101315;color:#e9eeee}
+.pq-live{display:flex;align-items:center;gap:28px;flex-wrap:wrap;font-size:16px}.pq-live b{font-size:24px;font-variant-numeric:tabular-nums;color:#fff}.pq-live strong{margin-left:auto;padding:9px 12px;border:1px solid currentColor;font-size:13px}
+.pq-panel svg{display:block;width:100%;max-height:59vh;min-height:230px;margin:4px auto}.pq-panel svg text{fill:#bac4c9;font:13px Arial,sans-serif;stroke:none}.pq-panel .pq-axis-label{font-size:16px;fill:#fff}.pq-grid{stroke:#30373b;stroke-width:1;fill:none}.pq-axis{stroke:#aeb9be;stroke-width:1.5;fill:none}.pq-region{fill:#255b46;fill-opacity:.5;stroke:#6db58d;stroke-width:2}.pq-panel svg .pq-zone-label{fill:#9eb9aa;font-size:14px;letter-spacing:1px}.pq-crosshair{stroke:#e7d67c;stroke-width:1;stroke-dasharray:5 5;fill:none}.pq-point{fill:#e8d17a;stroke:#111;stroke-width:2}.pq-panel[data-state="inside"] [data-pq-status]{color:#88d5a7}.pq-panel[data-state="outside"] [data-pq-status]{color:#ff7777}.pq-panel[data-state="outside"] .pq-point{fill:#ff5555}.pq-panel[data-state="bad"] [data-pq-status]{color:#ff7fe6}.pq-panel[data-state="idle"] [data-pq-status]{color:#c4cbd0}.pq-note{margin:0;font-size:11px;color:#9eaaaf;line-height:1.5}
+@media(max-width:600px){.capability-modal .modal-body{padding:12px 8px}.pq-live{gap:12px;font-size:13px}.pq-live b{font-size:20px}.pq-live strong{font-size:11px;margin-left:0}}
+
+#document-tab{display:flex!important;gap:3px;overflow-x:auto;min-height:29px;height:29px;flex-shrink:0;white-space:nowrap;padding:2px 5px;background:#c4c4c4}.workspace-tab{display:flex;flex:none;border:1px solid #888;background:#ddd;align-items:center}.workspace-tab.active{background:#ffffa3;border-bottom-color:#111}.workspace-tab button{font:12px Arial;color:#222;border:0;background:transparent;padding:4px 9px;cursor:pointer}.workspace-tab button[role=tab]:focus-visible{outline:2px solid #008bb0}.workspace-tab-close{padding:3px 6px!important}.water-flow-svg{width:100%;height:auto;max-height:690px}.water-note{font:11px Arial;color:#b6b6b6;margin:0 12px}

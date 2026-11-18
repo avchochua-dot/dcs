@@ -1,0 +1,25 @@
+AVC OTS 04.25 — BẢN TÁCH FILE CHO GITHUB
+
+Giữ nguyên chức năng 04.25; ảnh, dữ liệu, JavaScript và CSS được đặt riêng.
+Không dùng file Offline.html lớn để dán vào trình soạn thảo GitHub nữa.
+
+CÁCH CẬP NHẬT REPOSITORY dcs HIỆN CÓ
+1. Giải nén ZIP ra máy tính.
+2. Trên GitHub, thoát trang Edit bằng Cancel changes. Về trang Code của repository dcs.
+3. Chọn Add file > Upload files.
+4. Mở thư mục vừa giải nén, chọn TOÀN BỘ NỘI DUNG BÊN TRONG (gồm thư mục assets, index.html và các file còn lại), kéo vào vùng upload.
+5. Kiểm tra index.html ở gốc repository, assets là thư mục cùng cấp. Không tải nguyên file ZIP, không tạo thêm thư mục AVC_OTS... bọc ngoài.
+6. Chờ tất cả file tải xong rồi Commit changes. File index.html cũ được cập nhật; giữ nguyên CNAME hiện có trong repository.
+7. Khi site hiện có cập nhật xong, mở lại bằng Ctrl+F5. Có thể kiểm tra trong tab ẩn danh để tránh cache.
+
+LẦN CẬP NHẬT SAU
+Chỉ cần upload file thay đổi; giữ các ảnh trong assets. Khi nhận gói đầy đủ mới, có thể upload lại toàn bộ nội dung.
+Mỗi file trong gói này dưới 1,4 MB. Không cần Git LFS.
+
+CHẠY TRÊN MÁY
+Bản tách file dùng qua web server/GitHub Pages; mở trực tiếp file:// có thể bị chặn JavaScript module.
+Muốn nhấp đúp chạy offline: dùng gói AVC_OTS_04_25_Tai_ve.zip riêng đã cung cấp.
+
+RIÊNG TƯ
+Gói này không tự thay đổi quyền repository hoặc thiết lập xuất bản. Giữ nguyên phạm vi truy cập đã duyệt.
+Repository private không đồng nghĩa website GitHub Pages được bảo vệ truy cập; dùng địa chỉ OTS riêng tư hiện có nếu chỉ dành cho người được cấp quyền.
